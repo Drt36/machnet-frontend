@@ -1,0 +1,124 @@
+/*Variables*/
+
+:root {
+    --primary-color: red;
+    --text-color: olivedrab;
+    --margin-block: 1rem;
+}
+
+/*Base Styles*/
+
+body {
+    margin: 1vw;
+    overflow: hidden;
+    text-align: center;
+    color: var(--text-color);
+}
+
+header {
+    border: 2px solid var(--primary-color);
+    margin-top: var(--margin-block);
+}
+
+nav {
+    border: 2px solid var(--primary-color);
+    margin-top: var(--margin-block);
+}
+
+article {
+    border: 2px solid var(--primary-color);
+    margin-top: var(--margin-block);
+    height:60vh;
+}
+
+aside {
+    border: 2px solid var(--primary-color);
+    margin-top: var(--margin-block);
+}
+
+footer {
+    border: 2px solid var(--primary-color);
+    margin-top: var(--margin-block);
+}
+
+/*Mobile Design*/
+
+@media (min-width:320px) {
+    .desktop-container {
+        display: none;
+    }
+    #tablet-footer {
+        display: none;
+    }
+}
+
+/*Tablet Design*/
+
+@media (min-width:768px) {
+    .tablet-container-first {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .tablet-container-second {
+        display: flex;
+        flex-direction: row;
+    }
+    #tablet-main {
+        width: 75vh;
+        margin-left: 5vh;
+    }
+    #tablet-sidebar {
+        width: 20vh;
+    }
+    #tablet-ads {
+        width: 20vh;
+    }
+    #tablet-footer {
+        width: 75vh;
+        margin-left: 5vh;
+        display: inline;
+    }
+    .desktop-container {
+        display: none;
+    }
+    .universal-footer {
+        display: none;
+    }
+}
+
+/*Desktop Design*/
+
+@media (min-width:1025px) {
+    .tablet-container-first {
+        display: none;
+    }
+    .tablet-container-second {
+        display: none;
+        
+    }
+    #universal-nav {
+        display: none;
+    }
+    .desktop-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .desktop-container__div {
+        display: flex;
+        flex-direction: column;
+    }
+    .desktop-container__div {
+        width: 150vh;
+        margin-left: 5vh;
+    }
+    #desktop-sidebar {
+        width: 20vh;
+    }
+    #desktop-ads {
+        width: 20vh;
+        margin-left: 5vh;
+    }
+    .universal-footer {
+        display: block;
+    }
+}

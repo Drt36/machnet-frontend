@@ -1,0 +1,91 @@
+/* header*/
+header{
+    text-align: center;
+    color:white;
+}
+/*Body background*/
+body{
+    background-image: url(chessbackground.jpg);
+    backdrop-filter: blur(3px);
+    background-size: cover;
+    
+
+}
+/*Main frame */
+#main{
+    border: 2px solid black;
+    width:50vw;
+    height:80vh;
+    margin-left:25vw;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+   
+}
+
+/* filling black pattern */
+.main__divfirst:nth-child(even) {
+    background:black;
+  }
+  .main__divfirst:nth-child(odd) {
+    background:white;
+  }
+
+
+.main__divtwo:nth-child(odd) {
+background:black;
+}
+.main__divtwo:nth-child(even) {
+    background:white;
+    }
+
+
+.main__divthree:nth-child(even) {
+background:black;
+}
+.main__divthree:nth-child(odd) {
+    background:white;
+    }
+
+
+.main__divfour:nth-child(odd) {
+background:black;
+}
+.main__divfour:nth-child(even) {
+    background:white;
+    }
+
+
+
+.main__divfive:nth-child(even) {
+background:black;
+}
+.main__divfive:nth-child(odd) {
+    background:white;
+    }
+
+
+.main__divsix:nth-child(odd) {
+background:black;
+}
+.main__divsix:nth-child(even) {
+    background:white;
+    }
+
+
+.main__divseven:nth-child(even) {
+background:black;
+}
+.main__divseven:nth-child(odd) {
+    background:white;
+    }
+
+
+.main__diveight:nth-child(odd) {
+background:black;
+}
+.main__diveight:nth-child(even) {
+    background:white;
+    }
+    
+
+

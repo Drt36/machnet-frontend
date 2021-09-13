@@ -1,0 +1,122 @@
+/*Color Variables*/
+
+:root {
+    --primary-color: #800000;
+    --secondary-color: white;
+    --hover-color: #ddd;
+    --active-color: #ddd;
+    --border-color: black;
+}
+
+/*Styles*/
+
+body {
+    margin: 0;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .nav__logo {
+    color: var(--secondary-color);
+    margin-left: 15vw;
+    font-style: italic;
+}
+
+.nav .nav__menu {
+    list-style: none;
+    margin-right: 15vw;
+    margin-top: 2.5vh;
+}
+
+.nav .nav__menu .nav__item {
+    display: inline-block;
+}
+
+.nav .nav__menu .nav__item .nav__link {
+    padding: 24px;
+    color: var(--secondary-color);
+    font-size: larger;
+    text-decoration: none;
+}
+
+.nav .nav__menu .nav__item .nav__link:hover {
+    background-color: #ddd;
+    color: black;
+    padding: 24px;
+    transition: 0.5s linear
+}
+
+.nav .nav__menu .nav__item .nav__link--active {
+    background-color: #ddd;
+    color: black;
+}
+
+/*Carousel*/
+
+.carousel {
+    background-color: white;
+    border: 2px solid var(--border-color);
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 2vh;
+    border-radius: 10px;
+    position: relative;
+}
+
+.carousel .carousel__img {
+    width: 40vw;
+    height: 60vh;
+    position: relative;
+    display: none;
+    margin-left: 15vw;
+}
+
+
+
+/* Arrow button*/
+.carousel a {
+    position: absolute;
+    padding: 0.5rem;
+    font-size: 3rem;
+    border-radius: 10px;
+    top: 20vh;
+}
+
+.carousel .prev-link {
+    margin-left: 3vw;
+}
+
+.carousel .next-link {
+    margin-left: 65vw;
+}
+
+.carousel a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+/* Dot button*/
+.carousel .circle-wrapper {
+    text-align: center;
+}
+
+.circle-wrapper .circle {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.circle-wrapper .active, .circle-wrapper .circle:hover {
+    background-color: var(--primary-color)
+}

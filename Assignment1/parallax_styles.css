@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    color: white;
+    background-color: green;
+    height:2%;
+    padding:10px;
+    font-size: larger;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.articleimage{
+    background-image: url("chessbackground.jpg");
+    background-size: cover;
+    height:80vh;
+    background-attachment: fixed;
+}
+article p{
+    text-align: center;
+     
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color:#0E2431;
+    height:70px;
+    padding: 10px;
+}
+
+

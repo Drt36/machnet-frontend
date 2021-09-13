@@ -1,0 +1,82 @@
+/*Variables*/
+
+:root {
+    --primary-color: red;
+    --text-color: olivedrab;
+    --margin-block: 1rem;
+}
+
+/*Base Styles*/
+
+body {
+    margin: 1vw;
+    overflow: hidden;
+    text-align: center;
+    color: var(--text-color);
+}
+
+header, nav, article, aside, footer {
+    border: 2px solid var(--primary-color);
+}
+
+/*Defining grid area*/
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+article {
+    grid-area: article;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#sidebar {
+    grid-area: sidebar;
+}
+
+#ads {
+    grid-area: ads;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-column-gap: var(--margin-block);
+    grid-row-gap: var(--margin-block);
+}
+
+/*Mobile Responsive*/
+
+@media (min-width:320px) {
+    .main-wrapper {
+        grid-template-rows: 1fr 1fr 4fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "nav" "article" "sidebar" "ads" "footer";
+    }
+}
+
+/*Tablet Responsive*/
+
+@media (min-width:768px) {
+    .main-wrapper {
+        grid-template-columns: 1fr 1.5fr 1.5fr;
+        grid-template-rows: 1fr 1fr 10fr 1fr;
+        grid-template-areas: "header header header" "nav nav nav" "sidebar article article" "ads footer footer";
+    }
+}
+
+/*Desktop Responsive*/
+
+@media (min-width:1025px) {
+    .main-wrapper {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 10fr 1fr;
+        grid-template-areas: "header header header" "sidebar nav ads" "sidebar article ads" "footer footer footer";
+    }
+}

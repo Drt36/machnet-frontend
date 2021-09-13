@@ -1,0 +1,70 @@
+    body{
+        background-color:#0E2431;
+    }
+    header{
+    text-align: center;
+    color:white;
+    }
+    label{
+        color: white;
+        font-size: large;
+        margin-left:5%;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        margin-left:75%;
+
+    }
+
+    a:hover{
+        color: palevioletred;
+        font-size: large;
+        transition:0.5s linear;
+
+    }
+
+    #form{
+        height:60vh;
+        width: 30vw;
+        border: white 1px solid;
+        border-radius:10px;
+        margin-left:34vw;
+        padding:1%;
+        box-shadow:5px 5px 5px 5px peru;
+       
+    }
+
+    figure img{
+        height:40%;
+        width:40%;
+        margin-left:30%;
+
+    }
+
+    input{
+        width:90%;
+        height:5%;
+        margin-left:5%;
+        border-radius:10px;
+        margin-top:2%;
+        margin-bottom:2%;
+        padding:1%;
+    }
+
+    
+    #loginbutton{
+        width:15%;
+        height:max-content;
+        margin-top:2%;
+        margin-left:42.5%;
+        
+    }
+    #loginbutton:hover{
+        color: green;
+        width:16%;
+        font-weight: bold;
+        height:max-content;
+        transition: 0.5s linear;
+    }

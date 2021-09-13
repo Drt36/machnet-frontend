@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Mv Agusta Bikes</title>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <h1 class="nav__logo">Bike Showcase</h1>
+        <ul class="nav__menu">
+            <li class="nav__item"><a class="nav__link nav__link--active" href="#">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Products</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="carousel">
+
+        <img class="carousel__img" src="assets/images/bike-one.png">
+
+        <img class="carousel__img" src="assets/images/bike-two.jpg">
+
+        <img class="carousel__img" src="assets/images/bike-three.png">
+
+        <img class="carousel__img" src="assets/images/bike-four.png">
+
+        <a class="prev-link" onclick="plusCarousel(-1)">&#10094;</a>
+        <a class="next-link" onclick="plusCarousel(1)">&#10095;</a>
+
+        <div class="circle-wrapper">
+            <span class="circle" onclick="currentCarousel(1)"></span>
+            <span class="circle" onclick="currentCarousel(2)"></span>
+            <span class="circle" onclick="currentCarousel(3)"></span>
+            <span class="circle" onclick="currentCarousel(4)"></span>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+<script src="assets/js/carousel.js"></script>
+
+</html>

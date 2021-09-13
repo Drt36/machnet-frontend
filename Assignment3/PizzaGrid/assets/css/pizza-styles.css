@@ -1,0 +1,301 @@
+/*import font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&display=swap');
+/*colors Variables*/
+
+:root {
+    --header-background: #FFFFFF;
+    --card-background: #FFFFFF;
+    --body-background: #E5E5E5;
+    --btn-background: #E5E5E5;
+    --logo-color: #E5E5E5;
+    --price-color: #F12C0E;
+    --title-color: #F12C0E;
+    --nav-link-color: #F05510;
+    --footer-color: #F05510;
+}
+
+/*Base styles*/
+
+html {
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-background);
+}
+
+/*Header*/
+
+.header {
+    background-color: var(--header-background);
+    display: grid;
+    align-items: center;
+}
+
+.header .header__logo {
+    margin-left: 15vw;
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    color: var(--logo-color);
+    grid-area: logo;
+}
+
+.nav {
+    align-items: center;
+    grid-area: nav;
+}
+
+.header .nav__icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+    grid-area: hamburger;
+}
+
+.nav .nav__list {
+    list-style: none;
+}
+
+.nav .nav__list .nav__list__list-item {
+    margin-left: 0.9rem;
+    display: inline-block;
+}
+
+.nav .nav__list .nav__list__list-item a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+}
+
+.nav .nav__list .nav__list__list-item .active {
+    color: var(--nav-link-color);
+}
+
+.nav .nav__list .nav__list__list-item a:hover {
+    color: var(--nav-link-color);
+    opacity: 0.7;
+}
+
+.title {
+    text-align: center;
+}
+
+.title .title__name {
+    color: var(--title-color);
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.title .title__description {
+    font-size: 1rem;
+    font-style: italic;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5rem;
+}
+
+/*Main Content*/
+
+.main {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+/*Card*/
+
+#first-card {
+    grid-area: first-card;
+}
+
+#second-card {
+    grid-area: second-card;
+}
+
+#third-card {
+    grid-area: third-card;
+}
+
+#fourth-card {
+    grid-area: fourth-card;
+}
+
+.card {
+    display: grid;
+    background-color: var(--card-background);
+    padding: 1rem;
+}
+
+.card .card__img {
+    grid-area: card-img;
+}
+
+.card .card__img img {
+    width: 100%;
+    height: 90%;
+}
+
+.card .card__name {
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    grid-area: card-name;
+}
+
+.card .card__desc {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-style: italic;
+    font-family: "Open Sans", sans-serif;
+    grid-area: card-desc;
+}
+
+.card .card__price {
+    font-size: 1rem;
+    color: var(--price-color);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    grid-area: card-price;
+}
+
+.card .card__btn {
+    font-size: 0.8rem;
+    border: none;
+    padding: 0.7rem;
+    width: 70%;
+    margin-top: 1rem;
+    grid-area: card-btn;
+}
+
+.card .card__btn:hover {
+    background-color: #a59e9e;
+}
+
+.card__btn--primary {
+    background-color: var(--btn-background);
+}
+
+/*Footer*/
+
+footer {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer .highlight {
+    color: var(--footer-color)
+}
+
+/*Mobile Responsive*/
+
+@media screen and (min-width:320px) {
+    .nav .nav__list {
+        display: none;
+    }
+    .header .header__logo {
+        margin-left: 5vw;
+    }
+    .header {
+        grid-template-columns: 2fr 0.7fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo hamburger";
+    }
+    .title .title__description {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .main {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "first-card" "second-card" "third-card" "fourth-card";
+    }
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+        grid-template-areas: "card-img" "card-name" "card-desc" "card-price" "card-btn";
+    }
+}
+
+/*Tab Responsive*/
+
+@media screen and (min-width:768px) {
+    html {
+        font-size: 16px;
+    }
+    .nav .nav__list {
+        display: none;
+    }
+    .header .header__logo {
+        margin-left: 5vw;
+    }
+    .header {
+        grid-template-columns: 2fr 0.3fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo hamburger";
+    }
+    .title .title__description {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .main {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "first-card" "second-card" "third-card" "fourth-card";
+    }
+    .card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+        grid-template-areas: "card-img card-name" "card-img card-desc" "card-img card-price" "card-img card-btn";
+    }
+}
+
+/*Desktop Responsive*/
+
+@media screen and (min-width:1200px) {
+    html {
+        font-size: 18px;
+    }
+    .header .nav__icon img {
+        display: none;
+    }
+    .nav .nav__list {
+        display: inline-block;
+    }
+    .header .header__logo {
+        margin-left: 15vw;
+    }
+    .nav {
+        margin-right: 15vw;
+    }
+    .header {
+        grid-template-columns: 0.6fr 0.6fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo nav";
+    }
+    .title .title__description {
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+    .card .card__img img {
+        width: 100%;
+        height: 100%;
+    }
+    .main {
+        margin-left: 15vw;
+        margin-right: 15vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "first-card second-card" "third-card fourth-card";
+    }
+    .card {
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+        grid-template-areas: "card-img card-name" "card-img card-desc" "card-img card-price" "card-img card-btn";
+    }
+}
