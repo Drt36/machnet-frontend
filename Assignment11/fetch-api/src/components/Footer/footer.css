@@ -1,0 +1,9 @@
+footer {
+    margin-bottom:2rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer .highlight {
+    color: var(--footer-color)
+}
