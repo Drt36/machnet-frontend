@@ -1,0 +1,82 @@
+body {
+    background-image: linear-gradient(to right, #000046, #1cb5e0);
+}
+
+.main-div {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2.5fr, 3fr;
+    grid-template-areas: "welcome-div form-div";
+}
+
+.welcome-div {
+    color: white;
+    margin-left: 5vw;
+    text-align: center;
+    grid-area: welcome-div;
+}
+
+.welcome-div img {
+    margin-top: 20vh;
+    transition: 1s linear;
+}
+
+.welcome-div img:hover {
+    margin-top: 18vh;
+}
+
+.welcome-div p {
+    margin-top: 5vh;
+}
+
+.welcome-div button {
+    margin-top: 5vh;
+}
+
+.form-div {
+    height: 75vh;
+    padding: 2rem;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    display: grid;
+    color: #000046;
+    text-align: center;
+    grid-column: 1fr;
+    grid-area: form-div;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    background-color: whitesmoke;
+}
+
+.form-div input {
+    width: 60%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid #000046;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    margin: 0;
+    appearance: none;
+}
+
+button {
+    width: 10vw;
+    padding: 1rem;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    transition: 0.5s linear;
+}
+
+button:hover {
+    font-size: large;
+}
+
+.form-div button {
+    color: white;
+    margin-top: 3vh;
+    background-color: #000046;
+}
