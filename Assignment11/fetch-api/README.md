@@ -12,7 +12,7 @@ Outputs:
 ![Landing Page Image](./live-search1.png)
 
 3) Live Search
-![Landing Page Image](./live-search2.png)
+![Landing Page Image](./live-search-2.png)
 
 4) No Result
 ![Landing Page Image](./noresult.png)
